@@ -3,6 +3,7 @@ package vista;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -14,6 +15,8 @@ public class PanelEntradaDatos extends JPanel {
     // Atributos
     private JLabel lbLibro;
     private JComboBox cbLibro;
+    private ImageIcon icon;
+    private JLabel lbIcon;
 
     
   
@@ -31,6 +34,11 @@ public PanelEntradaDatos() {
     cbLibro.addItem("Libro Normal");
     cbLibro.addItem("Libro de Coleccion");
     this.add(cbLibro);
+    // implementación de imagen
+    icon = new ImageIcon(getClass().getResource("descarga.png"));
+    lbIcon = new JLabel(icon);
+    lbIcon.setBounds(285, 110, 300, 225);
+    this.add(lbIcon);
 
 
 

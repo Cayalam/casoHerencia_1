@@ -1,10 +1,13 @@
 package modelo;
 
+import java.awt.List;
+
 public class Libro {
     protected String titulo;
     protected String autor;
     protected int anio;
     protected Boolean lujo;
+    public List <Libro> libros = new <>();
 
     public Libro() {
         this.titulo = "";
