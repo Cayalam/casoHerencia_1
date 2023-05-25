@@ -30,7 +30,7 @@ public class VentanaPrincipal extends JFrame {
         this.setVisible(true);
 
         // Titulo de la ventana
-        this.setTitle("Impuesto Carro");
+        this.setTitle("Libreria");
         this.setSize(600,620);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
