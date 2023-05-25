@@ -1,13 +1,17 @@
 package modelo;
 
 import java.awt.List;
+import java.util.ArrayList;
 
 public class Libro {
     protected String titulo;
     protected String autor;
     protected int anio;
     protected Boolean lujo;
-    public List <Libro> libros = new <>();
+
+    List<Libro> libro = new ArrayList<>();
+
+
 
     public Libro() {
         this.titulo = "";
