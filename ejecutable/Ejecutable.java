@@ -9,7 +9,7 @@ import vista.VentanaPrincipal;
 public class Ejecutable {
     public static void main(String[] args) {
         VentanaPrincipal miVentana = new VentanaPrincipal();
-        Libro miLibro = new Libro();
+        Libro miLibro = new Libro("titulo", "autor", 2020, true);
         Controlador miControlador = new Controlador(miVentana, null);
     }
     
