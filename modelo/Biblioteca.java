@@ -26,10 +26,7 @@ public class Biblioteca {
     public int sizeLibro(){
         return miLibro.size();
     }
-    if(cbLibro.getSelectedItem().equals("Libro Normal")){
-        Libro libro = new Libro(getTitulo(),getAutor(),getAnio(),getLujo());
-        biblioteca.addLibros(libro);
-    }
+    
 }
    
 

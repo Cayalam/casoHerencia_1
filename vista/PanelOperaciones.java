@@ -22,7 +22,7 @@ public class PanelOperaciones extends JPanel {
         //Creación del boton calcular impuesto
         bAgregar = new JButton("Agregar");
         bAgregar.setFont(new Font("Arial",Font.BOLD, 12));
-        bAgregar.setActionCommand("calcular");
+        bAgregar.setActionCommand("agregar");
         bAgregar.setBounds(65,30,450,25);
         this.add(bAgregar);
         
