@@ -34,11 +34,7 @@ public PanelEntradaDatos() {
     cbLibro.addItem("Libro Normal");
     cbLibro.addItem("Libro de Coleccion");
     this.add(cbLibro);
-    // implementación de imagen
-    icon = new ImageIcon(getClass().getResource("descarga.png"));
-    lbIcon = new JLabel(icon);
-    lbIcon.setBounds(285, 110, 300, 225);
-    this.add(lbIcon);
+  
 
 
 

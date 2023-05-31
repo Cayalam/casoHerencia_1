@@ -4,6 +4,7 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
 
 public class DialogoAgregarLibroDeColeccion extends JDialog{
 
@@ -92,14 +93,42 @@ public class DialogoAgregarLibroDeColeccion extends JDialog{
         bAgregarLibroDeColeccion.setActionCommand("agregarLibroDeColeccion");
         this.add(bAgregarLibroDeColeccion);
 
-
-
-
-
-
-
-
+    } 
+    // Metodos de acceso
+    public String getTitulo(){
+        return tfTitulo.getText();
     }
+
+    public String getAutor(){
+        return tfAutor.getText();
+    }
+
+    public String getAnio(){
+        return tfAnio.getText();
+    }
+
+    public String getLujo(){
+        return tfLujo.getText();
+    }
+
+    public String getNombreColeccion(){
+        return tfNombreColeccion.getText();
+    }
+
+    public String getNumeroColeccion(){
+        return tfNumeroColeccion.getText();
+    }
+
+    public void agregarOyenteBoton(ActionListener pAL)
+    {
+        bAgregarLibroDeColeccion.addActionListener(pAL);
+    }
+
+    public void cerrarDialogoAgregarLibroDeColeccion()
+    {
+        this.dispose();
+    }
+
     
     
     

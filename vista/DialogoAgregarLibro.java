@@ -5,6 +5,7 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import java.awt.event.ActionListener;
 
 public class DialogoAgregarLibro extends JDialog 
 {
@@ -106,10 +107,18 @@ public class DialogoAgregarLibro extends JDialog
     public String getTfLujo() {
         return tfLujo.getText();
     }
+    public void agregarOyenteBoton(ActionListener pAL)
+    {
+        bAgregarLibro.addActionListener(pAL);
+    }
 
-    //----------------------
-    // Constructor
-    //----------------------
+    public void cerrarDialogoAgregarLibro()
+    {
+        this.dispose();
+    }
+
+   
+  
     
 
 
